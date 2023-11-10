@@ -1,0 +1,24 @@
+{
+    "name": "admingate/seo-helper",
+    "description": "SEO helper package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Admingate\\SeoHelper\\": "src"
+        }
+    },
+    "require": {
+        "admingate/admingate": "*@dev",
+        "admingate/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admingate\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+            ],
+            "aliases": {
+                "SeoHelper": "Admingate\\SeoHelper\\Facades\\SeoHelperFacade"
+            }
+        }
+    }
+}
